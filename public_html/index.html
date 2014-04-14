@@ -91,7 +91,14 @@
             <div class="small-10 columns">
                 <div class="row">
                     <div class="small-6 small-centered large-centered columns">
-                        site content
+                        <form name="bmiForm">
+                            Your Weight(kg): <input type="text" name="weight" size="10"><br />
+                            Your Height(cm): <input type="text" name="height" size="10"><br />
+                            <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+                            Your BMI: <input type="text" name="bmi" size="10"><br />
+                            This Means: <input type="text" name="meaning" size="25"><br />
+                            <input type="reset" value="Reset" />
+                        </form>
                     </div>
                 </div>
             </div>
@@ -103,7 +110,7 @@
         <!-- Footer subject -->
         <div class="row">
             <div class="small-6 small-centered large-centered columns">
-               &#x2620; <a href="google.com">About us</a> &bull; <a href="google.com">Privacy policy</a> &bull;
+                &#x2620; <a href="google.com">About us</a> &bull; <a href="google.com">Privacy policy</a> &bull;
                 <a href="google.com">Site map</a> &#x2620;
             </div>
         </div>
@@ -112,8 +119,9 @@
         <script src="js/vendor/jquery.js"></script>
         <script src="js/vendor/fastclick.js"></script>
         <script src="js/foundation.min.js"></script>
+        <script src="js/bmi.js"></script>
         <script>
-            $(document).foundation();
+                                $(document).foundation();
         </script>
     </body>
 </html>
